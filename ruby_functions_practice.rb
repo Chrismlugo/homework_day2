@@ -44,12 +44,17 @@ end
 
 
   def number_to_short_month_name(num)
-    case num
-    when 1
-      return "Jan"
-    when 3
-      return "Mar"
-    when 9
-      return "Sep"
-    end
+  return number_to_full_month_name(num)[0..2]
+end
+
+def volume_of_a_cube(side_length)
+  return side_length**3
+end
+
+def volume_of_a_sphere(radius)
+  return (4/3) * (Math::PI) * (radius**3)
+end
+
+def Fahrenheit_to_celcius(farenheit)
+  return fahrenheit - 32 / 1.8
 end
